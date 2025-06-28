@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Plugin: Petrobras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #1e293b; /* slate-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #475569; /* slate-600 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #64748b; /* slate-500 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans leading-relaxed">
+
+    <div class="max-w-screen-xl mx-auto p-4 md:p-8">
+        <!-- Cabeçalho -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-500">
+                Guia Completo: Petrobras
+            </h1>
+        </header>
+
+        <div class="md:grid md:grid-cols-12 md:gap-2">
+            <!-- Barra Lateral de Navegação -->
+            <aside class="md:col-span-3 lg:col-span-2 mb-8 md:mb-0">
+                <div class="sticky top-8">
+                    <h3 class="text-lg font-bold text-sky-400 mb-4 border-b border-slate-700 pb-2">Navegação</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a href="#materiais" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Materiais Brutos</a>
+                        <a href="#componentes-t1" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Componentes (Tier 1)</a>
+                        <a href="#componentes-t2" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Componentes (Tier 2)</a>
+                        <a href="#componentes-t3" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Componentes (Tier 3)</a>
+                        <a href="#maquinas" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Máquinas e Módulos</a>
+                        <a href="#funis" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Funis Sem Fio</a>
+                        <a href="#uso-extrator" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Uso: Extrator</a>
+                        <a href="#uso-funil" class="px-3 py-2 rounded-md hover:bg-slate-800 transition-colors">Uso: Funis Sem Fio</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main class="md:col-span-9 lg:col-span-10">
+
+                <!-- Seção de Materiais Brutos -->
+                <section id="materiais" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold text-sky-400 mb-6 border-b border-slate-700 pb-3">Lista de Materiais Brutos</h2>
+                    <p class="mb-6 text-slate-400">Esta é a lista completa de todos os materiais do Minecraft vanilla que você precisará para fabricar cada item do plugin pelo menos uma vez.</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center space-x-3"><span class="text-xl">🔩</span><span>Lingote de Ferro: <strong>15</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">✨</span><span>Pepita de Ouro: <strong>6</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🟥</span><span>Pó de Redstone: <strong>11</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🔮</span><span>Quartzo do Nether: <strong>7</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">⛓️</span><span>Barra de Ferro: <strong>4</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🧈</span><span>Lingote de Ouro: <strong>4</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">💎</span><span>Diamante: <strong>4</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🧱</span><span>Bloco de Redstone: <strong>6</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🥉</span><span>Bloco de Cobre: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🟩</span><span>Esmeralda: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">⚙️</span><span>Pistão: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🖼️</span><span>Painel de Vidro: <strong>4</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🧊</span><span>Bloco de Quartzo: <strong>6</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">💠</span><span>Caco de Ametista: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🔩</span><span>Bloco de Ferro: <strong>5</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">⬛</span><span>Obsidiana: <strong>12</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🌳</span><span>Tora de Carvalho: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">💎</span><span>Bloco de Diamante: <strong>5</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🍫</span><span>Lingote de Netherita: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">📦</span><span>Baú: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🛢️</span><span>Barril: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🍚</span><span>Açúcar: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🥛</span><span>Vidro: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">⚫</span><span>Pérola do Fim: <strong>2</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">🕳️</span><span>Funil: <strong>1</strong></span></div>
+                        <div class="flex items-center space-x-3"><span class="text-xl">👁️</span><span>Olho do Fim: <strong>1</strong></span></div>
+                    </div>
+                </section>
+
+                <!-- Helper para criar a grid de crafting -->
+                <script>
+                    function createGrid(items) {
+                        let gridHtml = '<div class="grid grid-cols-3 gap-1">';
+                        for (let i = 0; i < 9; i++) {
+                            const item = items[i] || { icon: '', name: 'Vazio' };
+                            gridHtml += `<div class="w-16 h-16 bg-slate-700/50 border border-slate-600 rounded-md flex items-center justify-center" title="${item.name}">
+                                <span class="text-4xl">${item.icon}</span>
+                            </div>`;
+                        }
+                        gridHtml += '</div>';
+                        return gridHtml;
+                    }
+
+                    const itemsMap = {
+                        iron_ingot: { icon: '🔩', name: 'Lingote de Ferro' },
+                        gold_nugget: { icon: '✨', name: 'Pepita de Ouro' },
+                        redstone: { icon: '🟥', name: 'Pó de Redstone' },
+                        quartz: { icon: '🔮', name: 'Quartzo' },
+                        gold_wiring: { icon: '🧵', name: 'Fiação de Ouro' },
+                        iron_bars: { icon: '⛓️', name: 'Barra de Ferro' },
+                        iron_gear: { icon: '⚙️', name: 'Engrenagem de Ferro' },
+                        gold_ingot: { icon: '🧈', name: 'Lingote de Ouro' },
+                        diamond: { icon: '💎', name: 'Diamante' },
+                        gold_gear: { icon: '🌟', name: 'Engrenagem de Ouro' },
+                        redstone_block: { icon: '🧱', name: 'Bloco de Redstone' },
+                        copper_block: { icon: '🥉', name: 'Bloco de Cobre' },
+                        circuit_board: { icon: '📟', name: 'Placa de Circuito' },
+                        iron_block: { icon: '🔩', name: 'Bloco de Ferro' },
+                        emerald: { icon: '🟩', name: 'Esmeralda' },
+                        piston: { icon: '🔧', name: 'Pistão' },
+                        glass_pane: { icon: '🖼️', name: 'Painel de Vidro' },
+                        quartz_block: { icon: '🧊', name: 'Bloco de Quartzo' },
+                        focusing_lens: { icon: '렌', name: 'Lente de Foco' },
+                        advanced_circuit_board: { icon: '💹', name: 'Placa de Circuito Avançada' },
+                        amethyst_shard: { icon: '💠', name: 'Caco de Ametista' },
+                        obsidian: { icon: '⬛', name: 'Obsidiana' },
+                        oak_log: { icon: '🌳', name: 'Tora de Carvalho' },
+                        diamond_block: { icon: '💎', name: 'Bloco de Diamante' },
+                        machine_casing: { icon: '🔲', name: 'Carcaça de Máquina' },
+                        diamond_gear: { icon: '💠', name: 'Engrenagem de Diamante' },
+                        heat_sink: { icon: '❄️', name: 'Dissipador de Calor' },
+                        microcontroller: { icon: '🧠', name: 'Microcontrolador' },
+                        processing_unit: { icon: '💻', name: 'Unidade de Processamento' },
+                        netherite_ingot: { icon: '🍫', name: 'Lingote de Netherita' },
+                        piston_system: { icon: '🦾', name: 'Sistema de Pistão' },
+                        chest: { icon: '📦', name: 'Baú' },
+                        barrel: { icon: '🛢️', name: 'Barril' },
+                        sugar: { icon: '🍚', name: 'Açúcar' },
+                        extractor_head: { icon: ' DRILL ', name: 'Cabeça Extratora' },
+                        energy_core: { icon: '💡', name: 'Núcleo de Energia' },
+                        reinforced_casing: { icon: '🔳', name: 'Carcaça Reforçada' },
+                        glass: { icon: '🥛', name: 'Vidro' },
+                        ender_pearl: { icon: '⚫', name: 'Pérola do Fim' },
+                        hopper: { icon: '🕳️', name: 'Funil' },
+                        ender_eye: { icon: '👁️', name: 'Olho do Fim' },
+                        wireless_hopper: { icon: '📡', name: 'Funil Sem Fio' }
+                    };
+
+                    function RecipeCard(id, title, description, recipeItems, ingredients) {
+                        const container = document.getElementById(id);
+                        const grid = createGrid(recipeItems);
+                        const ingredientsHtml = ingredients.map(ing => `<li>${ing}</li>`).join('');
+
+                        container.innerHTML = `
+                            <div class="bg-slate-800 rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-start gap-6">
+                                <div class="flex-shrink-0">${grid}</div>
+                                <div class="flex-grow">
+                                    <h4 class="text-xl font-bold text-amber-400">${title}</h4>
+                                    <p class="text-slate-400 mt-1 mb-3">${description}</p>
+                                    <h5 class="font-semibold text-slate-300 mb-1">Ingredientes:</h5>
+                                    <ul class="list-disc list-inside text-slate-400">${ingredientsHtml}</ul>
+                                </div>
+                            </div>
+                        `;
+                    }
+                </script>
+
+                <!-- Funções para renderizar as seções -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        // TIER 1
+                        RecipeCard('recipe_iron_gear', 'Engrenagem de Ferro', 'Um componente essencial para máquinas simples.', [null, itemsMap.iron_ingot, null, itemsMap.iron_ingot, null, itemsMap.iron_ingot, null, itemsMap.iron_ingot, null], ['4x Lingote de Ferro']);
+                        RecipeCard('recipe_gold_wiring', 'Fiação de Ouro', 'Conduz sinais de redstone com eficiência.', [itemsMap.redstone, itemsMap.gold_nugget, itemsMap.redstone, itemsMap.redstone, itemsMap.gold_nugget, itemsMap.redstone, itemsMap.redstone, itemsMap.gold_nugget, itemsMap.redstone], ['6x Pó de Redstone', '3x Pepita de Ouro']);
+                        RecipeCard('recipe_circuit_board', 'Placa de Circuito Simples', 'Base para componentes eletrônicos.', [itemsMap.gold_wiring, null, itemsMap.gold_wiring, itemsMap.quartz, itemsMap.quartz, itemsMap.quartz, itemsMap.gold_wiring, null, itemsMap.gold_wiring], ['4x Fiação de Ouro', '3x Quartzo']);
+                        RecipeCard('recipe_heat_sink', 'Dissipador de Calor', 'Evita o superaquecimento de componentes.', [itemsMap.iron_bars, null, itemsMap.iron_bars, itemsMap.iron_ingot, itemsMap.iron_ingot, itemsMap.iron_ingot, itemsMap.iron_bars, null, itemsMap.iron_bars], ['4x Barra de Ferro', '3x Lingote de Ferro']);
+
+                        // TIER 2
+                        RecipeCard('recipe_gold_gear', 'Engrenagem de Ouro', 'Uma engrenagem mais precisa e boa condutora.', [null, itemsMap.gold_ingot, null, itemsMap.gold_ingot, itemsMap.iron_gear, itemsMap.gold_ingot, null, itemsMap.gold_ingot, null], ['4x Lingote de Ouro', '1x Engrenagem de Ferro']);
+                        RecipeCard('recipe_diamond_gear', 'Engrenagem de Diamante', 'Extremamente durável e resistente ao calor.', [null, itemsMap.diamond, null, itemsMap.diamond, itemsMap.gold_gear, itemsMap.diamond, null, itemsMap.diamond, null], ['4x Diamante', '1x Engrenagem de Ouro']);
+                        RecipeCard('recipe_advanced_circuit', 'Placa de Circuito Avançada', 'Permite lógicas mais complexas.', [itemsMap.redstone_block, itemsMap.gold_gear, itemsMap.redstone_block, itemsMap.copper_block, itemsMap.circuit_board, itemsMap.copper_block, itemsMap.redstone_block, itemsMap.gold_gear, itemsMap.redstone_block], ['4x Bloco de Redstone', '2x Engrenagem de Ouro', '2x Bloco de Cobre', '1x Placa de Circuito Simples']);
+                        RecipeCard('recipe_piston_system', 'Sistema de Pistão Reforçado', 'Movimento mecânico de alta precisão.', [null, itemsMap.iron_block, null, itemsMap.iron_gear, itemsMap.emerald, itemsMap.iron_gear, itemsMap.redstone, itemsMap.piston, itemsMap.redstone], ['1x Bloco de Ferro', '2x Engrenagem de Ferro', '1x Esmeralda', '2x Pó de Redstone', '1x Pistão']);
+                        RecipeCard('recipe_focusing_lens', 'Lente de Foco de Quartzo', 'Concentra energia ou luz.', [null, itemsMap.glass_pane, null, itemsMap.glass_pane, itemsMap.quartz_block, itemsMap.glass_pane, null, itemsMap.glass_pane, null], ['4x Painel de Vidro', '1x Bloco de Quartzo']);
+
+                        // TIER 3
+                        RecipeCard('recipe_microcontroller', 'Microcontrolador', 'O cérebro de máquinas avançadas.', [itemsMap.focusing_lens, itemsMap.quartz_block, itemsMap.focusing_lens, itemsMap.advanced_circuit_board, itemsMap.amethyst_shard, itemsMap.advanced_circuit_board, itemsMap.focusing_lens, itemsMap.quartz_block, itemsMap.focusing_lens], ['4x Lente de Foco', '2x Bloco de Quartzo', '2x Placa de Circuito Avançada', '1x Caco de Ametista']);
+                        RecipeCard('recipe_machine_casing', 'Carcaça de Máquina Padrão', 'Estrutura reforçada para abrigar mecanismos.', [itemsMap.iron_block, itemsMap.obsidian, itemsMap.iron_block, itemsMap.oak_log, null, itemsMap.oak_log, itemsMap.iron_block, itemsMap.obsidian, itemsMap.iron_block], ['4x Bloco de Ferro', '2x Obsidiana', '2x Tora de Carvalho']);
+                        RecipeCard('recipe_reinforced_casing', 'Carcaça de Máquina Reforçada', 'Proteção extra contra ambientes hostis.', [itemsMap.diamond_block, itemsMap.obsidian, itemsMap.diamond_block, itemsMap.obsidian, itemsMap.machine_casing, itemsMap.obsidian, itemsMap.diamond_block, itemsMap.obsidian, itemsMap.diamond_block], ['4x Bloco de Diamante', '4x Obsidiana', '1x Carcaça de Máquina']);
+                        RecipeCard('recipe_processing_unit', 'Unidade de Processamento Lógico', 'Combina poder de cálculo e controle.', [itemsMap.diamond_gear, itemsMap.heat_sink, itemsMap.diamond_gear, itemsMap.advanced_circuit_board, itemsMap.microcontroller, itemsMap.advanced_circuit_board, itemsMap.diamond_gear, itemsMap.heat_sink, itemsMap.diamond_gear], ['4x Engrenagem de Diamante', '2x Dissipador de Calor', '2x Placa de Circuito Avançada', '1x Microcontrolador']);
+                        RecipeCard('recipe_energy_core', 'Núcleo de Energia', 'Converte e estabiliza energia para a máquina.', [itemsMap.quartz_block, itemsMap.diamond_gear, itemsMap.quartz_block, itemsMap.diamond_gear, itemsMap.processing_unit, itemsMap.diamond_gear, itemsMap.quartz_block, itemsMap.diamond_gear, itemsMap.quartz_block], ['4x Bloco de Quartzo', '4x Engrenagem de Diamante', '1x Unidade de Processamento']);
+
+                        // MÁQUINAS E MÓDULOS
+                        RecipeCard('recipe_extractor_head', 'Cabeça Extratora de Netherite', 'Ponta reforçada para perfurar e coletar recursos.', [null, itemsMap.netherite_ingot, null, itemsMap.obsidian, itemsMap.diamond_block, itemsMap.obsidian, null, itemsMap.piston_system, null], ['1x Lingote de Netherita', '2x Obsidiana', '1x Bloco de Diamante', '1x Sistema de Pistão']);
+                        RecipeCard('recipe_storage_module', 'Módulo de Armazenamento', 'Interface para sistemas de estocagem.', [null, itemsMap.chest, null, itemsMap.barrel, itemsMap.circuit_board, itemsMap.barrel, null, itemsMap.chest, null], ['2x Baú', '2x Barril', '1x Placa de Circuito Simples']);
+                        RecipeCard('recipe_speed_upgrade', 'Upgrade de Velocidade', 'Aumenta a velocidade de operação das máquinas.', [itemsMap.redstone_block, itemsMap.diamond_gear, itemsMap.redstone_block, itemsMap.diamond_gear, itemsMap.sugar, itemsMap.diamond_gear, itemsMap.redstone_block, itemsMap.diamond_gear, itemsMap.redstone_block], ['4x Bloco de Redstone', '4x Engrenagem de Diamante', '1x Açúcar']);
+                        RecipeCard('recipe_fuel_extractor', 'Extrator de Combustível', 'Máquina principal para geração de combustível.', [itemsMap.machine_casing, itemsMap.extractor_head, itemsMap.machine_casing, itemsMap.piston_system, itemsMap.energy_core, itemsMap.piston_system, itemsMap.reinforced_casing, null, itemsMap.reinforced_casing], ['2x Carcaça de Máquina', '1x Cabeça Extratora', '2x Sistema de Pistão', '1x Núcleo de Energia', '2x Carcaça Reforçada']);
+                        RecipeCard('recipe_empty_cell', 'Célula de Combustível Vazia', 'Um recipiente para materiais energéticos.', [null, itemsMap.glass, null, itemsMap.iron_ingot, null, itemsMap.iron_ingot, null, itemsMap.glass, null], ['2x Vidro', '2x Lingote de Ferro']);
+
+                        // FUNIS SEM FIO
+                        RecipeCard('recipe_channel_config', 'Configurador de Canal', 'Ferramenta para linkar funis sem fio.', [null, itemsMap.iron_gear, null, null, itemsMap.microcontroller, null, null, itemsMap.iron_gear, null], ['2x Engrenagem de Ferro', '1x Microcontrolador']);
+                        RecipeCard('recipe_wireless_hopper', 'Funil Sem Fio', 'Transfere itens para um funil receptor linkado.', [itemsMap.ender_pearl, itemsMap.advanced_circuit_board, itemsMap.ender_pearl, itemsMap.machine_casing, itemsMap.hopper, itemsMap.machine_casing, null, itemsMap.processing_unit, null], ['2x Pérola do Fim', '1x Placa de Circuito Avançada', '2x Carcaça de Máquina', '1x Funil', '1x Unidade de Processamento']);
+                        RecipeCard('recipe_advanced_hopper', 'Funil Sem Fio Avançado', 'Transfere itens entre mundos e 10x mais rápido.', [itemsMap.energy_core, itemsMap.ender_eye, itemsMap.energy_core, itemsMap.reinforced_casing, itemsMap.wireless_hopper, itemsMap.reinforced_casing, null, itemsMap.processing_unit, null], ['2x Núcleo de Energia', '1x Olho do Fim', '2x Carcaça Reforçada', '1x Funil Sem Fio', '1x Unidade de Processamento']);
+                    });
+                </script>
+
+                <div class="space-y-12">
+                    <section id="componentes-t1" class="scroll-mt-24"><h2 class="section-title">Componentes Básicos (Tier 1)</h2><div class="space-y-4"><div id="recipe_iron_gear"></div><div id="recipe_gold_wiring"></div><div id="recipe_circuit_board"></div><div id="recipe_heat_sink"></div></div></section>
+                    <section id="componentes-t2" class="scroll-mt-24"><h2 class="section-title">Componentes Intermediários (Tier 2)</h2><div class="space-y-4"><div id="recipe_gold_gear"></div><div id="recipe_diamond_gear"></div><div id="recipe_advanced_circuit"></div><div id="recipe_piston_system"></div><div id="recipe_focusing_lens"></div></div></section>
+                    <section id="componentes-t3" class="scroll-mt-24"><h2 class="section-title">Componentes Avançados (Tier 3)</h2><div class="space-y-4"><div id="recipe_microcontroller"></div><div id="recipe_machine_casing"></div><div id="recipe_reinforced_casing"></div><div id="recipe_processing_unit"></div><div id="recipe_energy_core"></div></div></section>
+                    <section id="maquinas" class="scroll-mt-24"><h2 class="section-title">Máquinas, Módulos e Consumíveis</h2><div class="space-y-4"><div id="recipe_fuel_extractor"></div><div id="recipe_extractor_head"></div><div id="recipe_storage_module"></div><div id="recipe_speed_upgrade"></div><div id="recipe_empty_cell"></div></div></section>
+                    <section id="funis" class="scroll-mt-24"><h2 class="section-title">Automação: Funis Sem Fio</h2><div class="space-y-4"><div id="recipe_channel_config"></div><div id="recipe_wireless_hopper"></div><div id="recipe_advanced_hopper"></div></div></section>
+                </div>
+
+                <!-- Seção de Guias de Uso -->
+                <div class="mt-16 space-y-12">
+                    <section id="uso-extrator" class="scroll-mt-24">
+                        <h2 class="text-3xl font-bold text-emerald-400 mb-6 border-b border-slate-700 pb-3">Como Usar: Extrator de Combustível</h2>
+                        <div class="space-y-6 text-slate-300">
+                            <p>O <code class="code-style">Extrator de Combustível</code> é uma máquina poderosa que extrai energia diretamente da lava, convertendo-a em <code class="code-style">Barras de Combustível Nuclear</code>.</p>
+
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-lg text-emerald-300 mb-2">Passo a Passo:</h4>
+                                <ol class="list-decimal list-inside space-y-3">
+                                    <li>
+                                        <strong>Fabricação:</strong> Primeiro, fabrique todos os componentes necessários e, por fim, o <code class="code-style">Extrator de Combustível</code>.
+                                    </li>
+                                    <li>
+                                        <strong>Posicionamento:</strong> Coloque o Extrator no chão. É crucial que um <code class="code-style">Barril</code> seja posicionado adjacente a ele (norte, sul, leste ou oeste). Este barril servirá como o inventário de saída.
+                                        <div class="mt-3 bg-slate-900/50 p-4 rounded-md text-sm">
+                                            ✅ <strong>Dica:</strong> Você receberá uma mensagem no chat confirmando a conexão com o barril. Se não receber, verifique se o barril está encostado no extrator.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Fonte de Energia:</strong> O Extrator precisa "alcançar" um bloco de <code class="code-style">Lava</code>. Ele faz isso através de um caminho de <code class="code-style">Pedregulho (Cobblestone)</code>. Cave para baixo a partir do bloco diretamente abaixo do Extrator e crie um "cano" de pedregulho que termine ao lado de uma fonte de lava.
+                                    </li>
+                                    <li>
+                                        <strong>Operação:</strong> A cada 4 segundos (80 ticks), a máquina verificará se consegue encontrar a lava.
+                                        <ul class="list-disc list-inside ml-5 mt-2 space-y-1 text-slate-400">
+                                            <li>Se encontrar lava, ela produzirá uma <code class="code-style">Barra de Combustível</code> e a depositará no barril conectado.</li>
+                                            <li>A máquina emitirá sons e partículas para indicar que está funcionando.</li>
+                                            <li>Há uma pequena chance (1% a cada 4 segundos) de que o bloco de lava conectado seja consumido e transformado em pedregulho.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="uso-funil" class="scroll-mt-24">
+                        <h2 class="text-3xl font-bold text-purple-400 mb-6 border-b border-slate-700 pb-3">Como Usar: Funis Sem Fio</h2>
+                        <div class="space-y-6 text-slate-300">
+                            <p>Os funis sem fio eliminam a necessidade de longas e feias correntes de funis, permitindo a transferência de itens a longas distâncias instantaneamente.</p>
+
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="font-bold text-lg text-purple-300 mb-2">Passo a Passo:</h4>
+                                <ol class="list-decimal list-inside space-y-3">
+                                    <li>
+                                        <strong>Fabricação:</strong> Você precisará de pelo menos dois funis sem fio (transmissor e receptor) e um <code class="code-style">Configurador de Canal</code>.
+                                    </li>
+                                    <li>
+                                        <strong>Vinculando os Funis (Linking):</strong> O processo é simples e feito com o Configurador de Canal em mãos:
+                                        <ul class="list-disc list-inside ml-5 mt-2 space-y-2 text-slate-400">
+                                            <li><strong>Definir o Receptor:</strong> Clique com o <kbd class="kbd-style">Botão Direito</kbd> no funil que você deseja que <strong>receba</strong> os itens. Você receberá uma mensagem confirmando que a localização do receptor foi salva.</li>
+                                            <li><strong>Definir o Transmissor:</strong> Vá até o outro funil (o que irá <strong>enviar</strong> os itens) e clique nele com o <kbd class="kbd-style">Botão Esquerdo</kbd>. Uma mensagem confirmará que os funis foram vinculados com sucesso.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Funcionamento:</strong> Agora, qualquer item que entrar no funil Transmissor será instantaneamente teleportado para o inventário do funil Receptor. Você pode conectar vários Transmissores a um único Receptor.
+                                    </li>
+                                    <li>
+                                        <strong>Tipos de Funis:</strong>
+                                        <ul class="list-disc list-inside ml-5 mt-2 space-y-2">
+                                            <li><strong class="text-sky-300">Funil Sem Fio (Padrão):</strong> Funciona apenas dentro do mesmo mundo/dimensão (Overworld, Nether, The End).</li>
+                                            <li><strong class="text-fuchsia-400">Funil Sem Fio Avançado:</strong> Uma versão melhorada que permite a transferência de itens <strong>entre diferentes mundos</strong> e opera 10x mais rápido, ideal para sistemas de alta capacidade.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <style>
+        .section-title {
+            @apply text-3xl font-bold text-amber-400 mb-6 border-b border-slate-700 pb-3;
+        }
+        .code-style {
+            @apply bg-slate-700 text-amber-300 font-mono text-sm rounded-md px-2 py-1;
+        }
+        .kbd-style {
+            @apply inline-block px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500;
+        }
+    </style>
+</body>
+</html>
